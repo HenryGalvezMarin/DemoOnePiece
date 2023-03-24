@@ -1,0 +1,29 @@
+
+.pelicula-card:hover .button-card{
+    visibility: visible;
+}
+.pelicula-card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+.pelicula-card:hover .pelicula-card-img{
+    transition: 0.3s;
+    filter:blur(2px) brightness(0.5);
+} 
+.pelicula-card:hover .title-card{
+    visibility: visible;
+}
+.title-card{
+    position: absolute;
+    visibility: hidden;
+}
+.button-card{
+    position: absolute;
+    margin-top: 250px;
+    visibility: hidden; 
+}
+.button-card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
