@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function DetallePelicula({verDetalle,handleVerPersonajes}) {
   return (
-    <div className='text-white h-auto p-2 bg-gray-700 mb-5 mx-5 rounded-lg justify-center flex flex-wrap'>        
+    <div className='max-w-screen-lg m-auto mb-5 text-white h-auto p-2 bg-gray-700 rounded-lg  flex flex-wrap justify-center md:flex-nowrap md:justify-start'>        
         <img className='rounded-l-lg' src={verDetalle.images.webp.image_url} alt={verDetalle.title}/>
         <div className='flex justify-items-stretch flex-col justify-center content-center p-10'>            
            <h2 className='font-bold text-lg'>{verDetalle.title}</h2>

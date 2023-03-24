@@ -1,7 +1,7 @@
 
 export default function PersonajesPelicula({verPersonajes,handleVerDetallePersonaje}) {
   return (    
-    <div className="flex flex-wrap justify-center gap-5 mb-4 m-3 bg-gray-600 p-4">
+    <div className="max-w-screen-lg m-auto mb-5 flex flex-wrap justify-center gap-5  bg-gray-600 p-4 max-h-72 overflow-auto">
     {verPersonajes.length===0?"Esta vacio":verPersonajes.map((personaje)=>
    ( <div key={personaje.character.mal_id} className='text-white h-auto bg-gray-700 rounded-lg  flex'> 
    <img className='rounded-l-lg w-40' src={personaje.character.images.webp.image_url} alt={personaje.character.name}/>
