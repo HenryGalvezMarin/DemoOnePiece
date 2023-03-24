@@ -8,3 +8,15 @@ export const listaPeliculas = async () => {
     });
   return data;
 }
+export const listaPersonajesPeliculas = async (id) => {
+    const { data: { data }, } =
+      await axios.get(`${API_BASE_URL}/anime/${id}/characters`, {
+      });
+    return data;
+  }
+  export const listaDetallesPersonaje = async (id) => {
+    const { data: { data }, } =
+      await axios.get(`${API_BASE_URL}/characters/${id}/full`, {
+      });
+    return data;
+  }
