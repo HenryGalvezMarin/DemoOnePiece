@@ -43,7 +43,7 @@ function App() {
     });
   }
   console.log(verDetallePersonaje)
-  console.log(Object.keys(verDetalle).length!==0);
+
   return (
 <div id="content" className="bg-gray-800 py-14 mt-5">
             <h1 className="fixed top-0 w-full text-xl bg-orange-400 text-white text-center font-bold py-3 z-50"><b className='text-blue-600'>ONE PIECE</b> MOVIES</h1>
